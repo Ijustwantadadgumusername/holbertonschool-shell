@@ -1,2 +1,3 @@
 #!/bin/bash
-mkdir /tmp/mine
+mkdir /tmp/basics
+
