@@ -10,7 +10,7 @@ case $i in
 		echo "bad luck from Japan"
 	;;
 	17) echo "$i"
-		echo "17 bad luck from Italy"
+		echo "bad luck from Italy"
 	;;
 	*) echo $i
 	;;
