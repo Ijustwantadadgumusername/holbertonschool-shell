@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#BOOOOOOOOOOOOOOOOO
+for i in {1..100}; do
+	echo -n "$i"
+	if (( i % 3 == 0 )); then 
+		echo -ne "\\rFizz"
+	fi
+	if (( i % 5 == 0 )); then
+		if (( three )); then
+			echo -ne "Buzz"
+		else
+			echo -ne "\\rBuzz"
+		fi
+	fi
+	echo
+	three=" "
+done
