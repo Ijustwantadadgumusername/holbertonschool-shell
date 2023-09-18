@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#lists things
+for file in *; do
+	if [[ "$file" =~ ^[0-9]+-.* ]]; then
+	continue
+	fi
+	echo "$file"
+done
