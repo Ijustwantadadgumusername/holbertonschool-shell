@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#Clock
+h=0
+m=1
+while [ $h -le 12 ]; do
+	while [ $m -le 59 ]; do
+	printf "%02d:%02d\n" $h $m
+	((m++))
+done
+((h++))
+m=1
+done
