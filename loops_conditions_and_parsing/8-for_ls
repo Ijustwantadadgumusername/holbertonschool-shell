@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 #lists things
-for file in [0-9] *-*; do
-	if [ "$file" != "$0" ]; then
-		no_prefix="${file#*-}"
-		echo "$no_prefix"
+for file in *; do
+	if [[ $file == *-* ]]; then
+		echo "${file#*-}"
+		else
+			echo "$file"
 	fi
 done
