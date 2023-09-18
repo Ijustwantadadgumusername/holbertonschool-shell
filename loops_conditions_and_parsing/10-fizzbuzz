@@ -1,17 +1,16 @@
 #!/usr/bin/env bash
 #BOOOOOOOOOOOOOOOOO
-for i in {1..100}; do
-	echo -n "$i"
-	if (( i % 3 == 0 )); then 
-		echo -ne "\\rFizz"
+Start=1
+End=100
+while [ $Start -le $End ]; do
+	if ((Start % 3==0)) && ((Start % 5==0)); then
+		echo "FizzBuzz"
+	elif ((Start % 3==0)); then
+		echo "Fizz"
+	elif ((Start % 5==0)); then
+		echo "Buzz"
+	else
+		echo $Start
 	fi
-	if (( i % 5 == 0 )); then
-		if (( three )); then
-			echo -ne "Buzz"
-		else
-			echo -ne "\\rBuzz"
-		fi
-	fi
-	echo
-	three=" "
+	((Start=Start+1))
 done
