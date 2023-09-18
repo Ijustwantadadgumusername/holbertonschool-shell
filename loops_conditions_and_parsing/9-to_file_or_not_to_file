@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#Does this part even matter
+filename="school"
+if [ -e "$filename" ]; then
+	echo "school file exists"
+else
+	echo "school file does not exist"
+fi
